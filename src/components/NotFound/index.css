@@ -1,0 +1,72 @@
+.notfound-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+.notfound-image {
+  height: 35%;
+  width: 35%;
+}
+.notfound-heading {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  color: #262626;
+}
+.notfound-para {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #262626;
+}
+.home-btn {
+  font-family: 'roboto';
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #4094ef;
+  height: 30px;
+  width: 90px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .notfound-heading {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    color: #262626;
+  }
+  .notfound-para {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #262626;
+  }
+  .home-btn {
+    font-family: 'roboto';
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #4094ef;
+    height: 30px;
+    width: 90px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    outline: none;
+  cursor: pointer;
+  }
+}

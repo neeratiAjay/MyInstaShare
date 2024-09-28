@@ -1,0 +1,516 @@
+.render-failure-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.failure-image {
+  height: 30%;
+  width: 30%;
+}
+.failure-text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #262626;
+}
+.retry-btn {
+  background-color: #4094ef;
+  font-size: 14px;
+  font-family: 'roboto';
+  color: #ffffff;
+  text-align: center;
+  height: 30px;
+  width: 90px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+.loader-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.success-view-container {
+  display: flex;
+  width: 85%;
+  align-items: center;
+  flex-direction: column;
+}
+.profile-container {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  justify-content: space-between;
+}
+@media screen and (max-width: 576px) {
+  .success-view-container {
+    display: flex;
+    width: 95%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .profile-container {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .user-profile-image {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 0;
+  }
+  .user-details-container {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .user-name-lg {
+    display: none;
+  }
+  .user-name-sm {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #262626;
+  }
+  .sm-name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .followers-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .count-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  .posts-text {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #262626;
+    padding: 0;
+    margin: 0;
+  }
+  .popsts-count {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #262626;
+    padding: 0;
+    margin: 0;
+  }
+  .user-bio-container-sm {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    padding: 0;
+  }
+  .user-id {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #262626;
+    padding-top: 10px;
+    margin: 0;
+  }
+  .bio-text {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #262626;
+    margin: 0;
+    padding-top: 5px;
+  }
+  .user-bio-container-lg {
+    display: none;
+  }
+  .user-stories-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    margin-left: 10px;
+  }
+  .user-story-img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 1px solid #bfbfbf;
+  }
+  .line {
+    border: 0.5px solid #c6c6c8;
+    width: 100%;
+    margin-left: 10px;
+  }
+  .grid-icon-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 10px;
+  }
+  .posts-text-grid {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #262626;
+    padding-left: 10px;
+  }
+  .empty-posts-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .no-posts-text {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    color: #262626;
+  }
+  .non-empty-posts-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+  }
+  .user-post-image {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+  }
+}
+
+/* ************************************************Min width 577 pixel*/
+
+@media screen and (min-width: 577px) {
+  .user-profile-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  .user-details-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .count-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .user-name-lg {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: left;
+    color: #262626;
+  }
+  .user-name-sm {
+    display: none;
+  }
+  .followers-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+  }
+  .popsts-count {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #262626;
+    padding: 0;
+    margin: 0;
+  }
+  .posts-text {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #262626;
+    padding: 0;
+    margin: 0;
+  }
+  .user-bio-container-sm {
+    margin-left: 25px;
+  }
+  .bio-text {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #262626;
+    padding-top: 0px;
+    margin: 0;
+  }
+  .user-id {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #262626;
+    padding-top: 10px;
+    margin: 0;
+  }
+  .user-bio-container-lg {
+    display: none;
+  }
+  .user-stories-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    margin-left: 10px;
+  }
+  .user-story-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 1px solid #bfbfbf;
+  }
+  .line {
+    border: 0.5px solid #c6c6c8;
+    width: 100%;
+    margin-left: 20px;
+  }
+  .grid-icon-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+  }
+  .posts-text-grid {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    padding-left: 10px;
+    color: #262626;
+  }
+  .empty-posts-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .no-posts-text {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    color: #262626;
+  }
+  .non-empty-posts-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+  }
+  .user-post-image {
+    height: 140px;
+    width: 140px;
+    margin: 5px;
+  }
+}
+/************************************************************min width 767px */
+@media screen and (min-width: 767px) {
+  .user-profile-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .user-details-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .user-name-lg {
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: left;
+    color: #262626;
+  }
+  .user-name-sm {
+    display: none;
+  }
+  .followers-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+  }
+  .count-text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 15px;
+  }
+  .popsts-count {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    padding: 0;
+    margin: 2px;
+    color: #262626;
+  }
+  .posts-text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #262626;
+    padding: 0;
+    margin: 2px;
+  }
+  .user-bio-container-sm {
+    display: none;
+  }
+  .user-bio-container-lg {
+    display: flex;
+    flex-direction: column;
+  }
+  .user-id-lg {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #262626;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+  .user-bio-lg {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #262626;
+    padding: 0;
+    margin: 0;
+  }
+  .user-stories-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-left: 25px;
+  }
+  .user-story-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 1.5px solid #bfbfbf;
+  }
+  .line {
+    border: 0.5px solid #c6c6c8;
+    width: 100%;
+    margin-left: 30px;
+  }
+  .grid-icon-container {
+    display: flex;
+    width: 100%;
+    padding-left: 30px;
+    align-items: center;
+  }
+  .posts-text-grid {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #262626;
+    padding-left: 10px;
+  }
+  .empty-posts-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .no-posts-text {
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 48px;
+    text-align: left;
+
+    color: #262626;
+  }
+  .non-empty-posts-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+  }
+  .user-post-image {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+  }
+}
